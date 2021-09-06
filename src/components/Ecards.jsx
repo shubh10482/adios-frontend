@@ -26,24 +26,36 @@ const Ecards = () => {
             <Home />
             :
             <>
-                <h1 className="home-heading mt-3">All Wishes</h1>
-                
-                {
-                    allCards && allCards.length ?
-                        allCards.map(card => {
-                            return (
-                                <div className="card ecard" key={card.name}>
-                                    <div className="card-body">
-                                        <h6 className="card-subtitle mb-2 text-muted">Name: {card.name}</h6>
-                                        <p className="card-text">Message: {card.message}</p>
-                                    </div>
-                                </div>
-                            )
-                        })
-                        :
-                        <div>No message found!!</div>
-                }
-                <button type="button" className="btn btn-outline-dark start m-3" onClick={() => setHome(true)}>Back to home</button>
+                <div className="ecard-page">
+                    <h1 className="home-heading red"><span className="mt-5">ALL THE BEST</span></h1>
+
+                    {
+                        allCards && allCards.length ?
+                            allCards.map(card => {
+                                return (
+                                    // <div className="card ecard" key={card.name}>
+                                        /* <div className="card-body">
+                                            <h6 className="card-subtitle mb-2 text-muted"><span className="red">{card.name}</span></h6>
+                                            <p className="card-text">{card.message}</p>
+                                        </div> */
+                                        <div className="row">
+                                            <div className="colL col-2 sap">
+                                            {card.name}
+                                            </div>
+                                            <div className="colR col-10 msg">
+                                            {card.message}
+                                            </div>
+                                        </div>
+                                    // </div>
+                                )
+                            })
+                            :
+                            <div>No message found!!</div>
+                    }
+                    <div className="home-heading">
+                        <button type="button" className="btn btn-outline-warning m-3" onClick={() => setHome(true)}>Back to home</button>
+                    </div>
+                </div>
             </>
     )
 }

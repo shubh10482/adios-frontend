@@ -14,9 +14,9 @@ const Home = () => {
             />
             :
             <>
-                <img src={Adios} />
-                <img src={GoodLuck} />
-                <h1 className="home-heading">Please <span className="as-link" onClick={() => setMsgModal(true)}>click here</span> to start</h1>
+                <img src={Adios} width="40%" />
+                <img src={GoodLuck} width="50%" />
+                <h1 className="home-heading"><span className="as-link" onClick={() => setMsgModal(true)}>ADD ADIOS MESSAGE FOR HIMADRI</span></h1>
             </>
     )
 }

@@ -10,14 +10,16 @@
 
 .custom-card{
     width: 80%;
+    /* margin-left: 10%; */
 }
 
 .ecard{
-    width: 18rem;
-    float: left;
+    /* text-align: center; */
+    width: 70%;
     position: relative;
-    padding: 10px;
-    margin: 50px;
+    /* padding: 10px; */
+    margin: 50px 50px 50px 230px;
+    /* background-color: lightgrey; */
 }
 
 .btn{
@@ -26,7 +28,7 @@
 
 .btn.first{
     position: absolute;
-    left: 30%;
+    left: 20%;
 }
 
 .btn.second{
@@ -39,4 +41,43 @@
     width: 75%;
     margin: 50px;
     color: green;
+}
+
+.red{
+    color: red;
+}
+
+.ecard-page{
+    background-color: black;
+    height: 100%;
+}
+
+.row{
+    padding: 10px;
+    width: 80%;
+    padding-left: 20%;
+}
+
+.colL{
+    border-top-left-radius: 20px;
+}
+
+.colR{
+    border-bottom-right-radius: 20px;
+}
+
+.sap{
+    border-right: 1px solid orange;
+    background-color: orange;
+    color: white;
+    padding: 20px;
+}
+
+.msg{
+    background-color: lightyellow;
+    padding: 20px;
+}
+
+.white{
+    color: white;
 }
